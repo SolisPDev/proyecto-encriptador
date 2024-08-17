@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header_logo" src="" alt="" />
+      <div class="header_text">
+        <h1 class="header_title">Encriptador de texto</h1>
+        <h2 class="header_subtitle">Challenge</h2>
+      </div>
+    </header>
+    <main class="encriptador">
+      <!-- inicia seccion de entrada de datos -->
+      <section class="inputs_section">
+        <textarea
+          class="box_process_inputs_data"
+          name="textoEntrada"
+          id="textoEntrada"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+
+        <div class="inputs_box_msg">
+          <p class="inputs_msg_error" id="msgError">
+            <i class="fa-solid fa-face-frown"></i>
+            El texto contiene valores incorrectos.
+          </p>
+          <p class="inputs_msg_instruction">
+            <i class="fa-solid fa-circle-exclamation"></i> Solo letras
+            minúsculas y sin acentos.
+          </p>
+        </div>
+        <div class="inputs_button_group">
+          <button class="inputs_btn" onclick="encriptar();" id="encriptar">
+            <i class="fa-solid fa-file-signature"></i> Encriptar
+          </button>
+          <button
+            class="inputs_btn"
+            onclick="desencriptar();"
+            id="desencriptar"
+          >
+            <i class="fa-solid fa-file-code"></i> Desencriptar
+          </button>
+        </div>
+      </section>
+      <!-- termina seccion de entrada de datos -->
+      <!-- inicia seccion de resultados -->
+      <section class="output_section">
+        <img
+          class="output_section_img"
+          id="resultadoImagen"
+          src="./assets/encriptador.png"
+          alt="diseno minimalista de un encriptador"
+        />
+        <textarea
+          class="box_output_data"
+          name="textoResultado"
+          id="textoResultado"
+        ></textarea>
+        <div class="output-msg-btns">
+          <p class="output_msg_bold" id="resultadoTextoMsg">
+            Ningún mensaje fue encontrado
+          </p>
+          <p class="output_msg_normal">
+            Ingrese el texto que desea encriptar o desencriptar
+          </p>
+          <button class="output_btn" onclick="copiar();" id="resultadoCopiar">
+            <i class="fa-solid fa-copy"></i> Copiar
+          </button>
+        </div>
+      </section>
+      <!-- termina seccion de resultados -->
+      <aside class="social-icons" id="sidebar">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:solispantonio@horizondevs.net"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="footer">
+      <img
+        class="footer_logos"
+        src="https://app.aluracursos.com/assets/images/logos/logo-aluraespanhol.svg"
+        alt="Alura Latam"
+      />
+      <img
+        class="footer_logos"
+        src="https://cdn2.gnarususercontent.com.br/1/1221562/b6256fa6-5fde-4cdd-a4a3-d33ebc90bb6c.png"
+        alt="Oracle Next Educaion"
+      />
+      <p>&copy; 2024 Antonio Solís Perales.</p>
+      <p class="footer_text">
+        <a href="https://www.linkedin.com/"
+          ><i class="fa-brands fa-linkedin"></i> linkedin</a
+        >
+        |
+        <a href="mailto:solispantonio@horizondevs.net"
+          ><i class="fa-regular fa-envelope"></i> Contacto</a
+        >
+        | <a href="#"><i class="fa-brands fa-discord"></i> Discord</a> |
+        <a href="#"><i class="fa-brands fa-github"></i> Github</a>
+      </p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

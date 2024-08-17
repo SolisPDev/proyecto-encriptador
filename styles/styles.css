@@ -1,0 +1,329 @@
+/*****************************************************/
+/* Estilos para el Proyecto Encriptador              */
+/* Por: Antonio Solis Perales                        */
+/* solispantonio@horizondevs.net                     */
+/*****************************************************/
+/* Importación de fuentes  */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Jura:wght@300..700&display=swap");
+/* Variables Iniciales */
+/***********************/
+:root {
+  /* Fonts types         */
+  --fuente-jura: "Jura", sans-serif;
+  --fuente-cutive: "Cutive Mono", monospace;
+
+  /* Colores del sitio   */
+  --color-fondo: rgb(240,240,240);
+  --color-texto-normal: rgb(10,100,10);
+  --color-texto-resaltado: rgb(92, 122, 35);
+  --color-fondo-footer: rgb(255,255,255);
+  --color-btn: rgb(160,210,92);
+  --color-btn-hover:rgb(214,210,77);
+}
+
+/*  Parametros de inicio  */
+/**************************/
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+body{
+  box-sizing: border-box;
+  background: var(--color-fondo);
+  color: var(--color-texto-normal);
+}
+
+.header{
+  display: flex;
+  padding: 1% 0% 0% 10%;
+  align-items: baseline;
+  
+}
+
+.header_logo{
+  display: flex;
+  width: 10%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.header_text{
+  font-family: var(--fuente-jura);
+  margin: 0px 0px 0px 40px;
+}
+
+.header_title{
+  font-size: 3rem;
+}
+
+.header_subtitle{
+  font-size: 2rem;
+}
+
+.encriptador{
+  display: flex;
+  align-items: center;
+  padding: 5% 15%;
+  justify-content: space-between;
+  width: 70%;
+  gap: 50px;
+}
+
+.inputs_section{
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+ul{
+  list-style: none;
+}
+
+textarea {
+  width: 100%; 
+  height: 150px; /* Fija el alto a 150 píxeles */
+  resize: none;
+}
+
+.box_process_inputs_data{
+  font-family: var(--fuente-cutive);
+  font-size: 1rem;
+}
+
+.inputs_msg_instruction{
+  font-family: var(--fuente-jura);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.inputs_msg_error{
+  font-family: var(--fuente-jura);
+  font-size: 1.1rem;
+  font-weight: 900;
+
+}
+
+.inputs_button_group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs_btn{
+  width: 45%;
+  color:var(--color-texto-normal);
+  background-color: var(--color-btn);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 8px;
+  font-family: var(--fuente-cutive);
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--color-btn);
+}
+
+.inputs_btn:hover{
+  background: var(--color-btn-hover);
+  border: 2px solid var(--color-btn-hover);
+  
+}
+
+/* **********************************
+   *******  output sections ********* 
+   **********************************/
+.output_section{
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  align-items: center;
+}
+
+.output_section_img{
+  width: 45%;
+
+}
+
+.box_output_data{
+  font-family: var(--fuente-cutive);
+  font-size: 1rem;
+}
+
+.output_msg_bold{
+  font-family: var(--fuente-jura);
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.output_msg_normal{
+  font-family: var(--fuente-jura);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.output-msg-btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.output_btn{
+  width: 180px;
+  color:var(--color-texto-normal);
+  background-color: var(--color-btn);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: 2px solid var(--color-btn);
+  font-family: var(--fuente-cutive);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.output_btn:hover{
+  background: var(--color-btn-hover);
+  border: 2px solid var(--color-btn-hover);
+}
+
+/* **********************************
+   *******     FOOTER     *********** 
+   **********************************/
+.footer {
+  font-family: var(--fuente-jura);
+  font-size: .85rem;
+  text-align: center;
+  background: var(--color-fondo-footer);
+  padding: 5px 0 12px 0;
+}
+
+.footer_text a {
+  color: var(--color-texto-normal);
+  text-decoration: none;
+}
+
+/* **********************************
+   ******* SOCIAL MEDIA   *********** 
+   **********************************/
+   .social-icons{
+    position: fixed;
+    right: 30px;
+    top: 30%;
+  }
+  
+  .social-icons ul li{
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .social-icons ul li a{
+    color: var(--color-texto-normal);
+    padding: 10px;
+    display: block;
+    font-size: 29px;
+    border-radius: 5px;
+  }
+  
+  .social-icons ul li a:hover{
+    background-color: var(--color-btn-hover);
+    color: var(--color-fondo);
+  }
+
+  /* **********************************
+     ******* TABLET SIZE    *********** 
+     **********************************/
+  @media (min-width: 681px) and (max-width: 850px){
+    .header{
+      padding: 5%;
+      justify-content: center;
+    }
+
+    .header_logo{
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+
+    .header_title{
+      font-size: 2.5rem;
+    }
+    
+    .header_subtitle{
+      font-size: 1.5rem;
+    }
+    .encriptador{
+      flex-direction: column;
+      align-items: center;
+    }
+    .inputs_button_group{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .output-msg-btns{
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+/* **********************************
+   ******* CELULAR SIZE   *********** 
+   **********************************/
+  @media only screen and (max-width: 680px){
+    .header{
+      padding: 1%;
+      justify-content: center;
+    }
+
+    .header_logo{
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .header_title{
+      font-size: 2rem;
+    }
+    
+    .header_subtitle{
+      font-size: 1.5rem;
+    }
+
+    .encriptador{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inputs_section{
+      gap: 30px;
+    }
+
+    textarea {
+      padding: 20px;
+      width: 85%;
+      height: 75px; /* Fija el alto a 150 píxeles */
+      resize: none;
+    }
+
+    .inputs_button_group{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .output_section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .output-msg-btns{
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-icons{
+      display: none;
+    }
+  }
