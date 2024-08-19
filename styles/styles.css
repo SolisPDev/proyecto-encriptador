@@ -319,6 +319,21 @@ textarea {
       gap: 20px;
     }
 
+    .inputs_msg_instruction{
+      font-family: var(--fuente-jura);
+      font-size: 1rem;
+      font-weight: 500;
+      margin:40px;
+    }
+    
+    .inputs_msg_error{
+      font-family: var(--fuente-jura);
+      font-size: 1.1rem;
+      font-weight: 900;
+      margin:40px;
+    
+    }
+
     .output_section{
       width: 400;      
       gap: 10px;
