@@ -256,6 +256,12 @@ textarea {
       flex-direction: column;
       align-items: center;
     }
+    .inputs_section{
+      width: 380px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
     .inputs_button_group{
       flex-direction: column;
       align-items: center;
@@ -295,12 +301,13 @@ textarea {
     }
 
     .inputs_section{
-      gap: 30px;
+      width: 400px;
+      gap: 15px;
     }
-
+    
     textarea {
-      padding: 20px;
-      width: 85%;
+      padding: 15px;
+      width: 75%;
       height: 75px; /* Fija el alto a 150 píxeles */
       resize: none;
     }
@@ -312,10 +319,8 @@ textarea {
     }
 
     .output_section{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 80px;
+      width: 350;      
+      gap: 15px;
     }
 
     .output-msg-btns{
