@@ -288,11 +288,11 @@ textarea {
     }
 
     .header_title{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     
     .header_subtitle{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .encriptador{
@@ -302,14 +302,15 @@ textarea {
 
     .inputs_section{
       width: 400px;
-      gap: 15px;
+      gap: 10px;
     }
     
     textarea {
-      padding: 15px;
+      padding: 25px;
       width: 75%;
       height: 75px; /* Fija el alto a 150 píxeles */
       resize: none;
+      margin: 10%;
     }
 
     .inputs_button_group{
