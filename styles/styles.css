@@ -307,7 +307,7 @@ textarea {
     
     textarea {
       padding: 25px;
-      width: 75%;
+      width: 60%;
       height: 75px; /* Fija el alto a 150 píxeles */
       resize: none;
       margin: 10%;
@@ -320,8 +320,8 @@ textarea {
     }
 
     .output_section{
-      width: 350;      
-      gap: 15px;
+      width: 400;      
+      gap: 10px;
     }
 
     .output-msg-btns{
