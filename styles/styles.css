@@ -73,7 +73,7 @@ body{
 }
 
 .inputs_section{
-  width: 415px;
+  width: 425px;
   display: flex;
   flex-direction: column;
   gap: 50px;
