@@ -318,10 +318,11 @@ textarea {
     .inputs_section{
       width: 400px;
       gap: 10px;
+      margin: 10%;
     }
     
     textarea {
-      width: 90%;
+      width: 50%;
       height: 75px; /* Fija el alto a 150 píxeles */
       resize: none;
       margin: 10%;
@@ -332,19 +333,31 @@ textarea {
       align-items: center;
       gap: 20px;
     }
-
+    .box_process_inputs_data{
+      width: 70%;
+      height: 100px;
+      margin: 20%;
+    }
     .inputs_msg_instruction{
       font-family: var(--fuente-jura);
       font-size: 1rem;
       font-weight: 500;
-      margin:40px;
+      margin-left:20%;
+    }
+    .box_output_data{
+      width: 70%;
+      height: 100px;
+      margin: 20%;
+    }
+    .output_msg_bold{
+      margin-left: 20%;
     }
     
     .inputs_msg_error{
       font-family: var(--fuente-jura);
       font-size: 1.1rem;
       font-weight: 900;
-      margin:40px;
+      margin-left: 20%;
     
     }
 
@@ -353,7 +366,7 @@ textarea {
       gap: 10px;
     }
     .output_msg_normal{
-      margin: 40px;
+      margin-left: 20%;
     }
     .output-msg-btns{
       align-items: center;
