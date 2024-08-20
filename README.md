@@ -10,6 +10,9 @@ Ejecutando la ENCRIPTACION
 Ejecutando la DESENCRIPTACION
 ![desencriptacion](https://github.com/user-attachments/assets/c0b06515-5153-4a52-8f7a-c90cd287c597)
 
+## 🛠 Skills
+Javascript, HTML, CSS...
+
 🌱 I’m currently learning ... Web development!!
 
 🌱 I’m currently learning ... in OracleNextEducation
