@@ -180,6 +180,10 @@ textarea {
   gap: 5px;
 }
 
+.output-msg-btns button{
+  margin-top: 20px;
+}
+
 .output_btn{
   width: 180px;
   color:var(--color-texto-normal);
@@ -371,6 +375,10 @@ textarea {
     .output-msg-btns{
       align-items: center;
       gap: 10px;
+    }
+
+    .output-msg-btns button{
+      margin-top: 20px;
     }
 
     .social-icons{
