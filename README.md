@@ -2,8 +2,16 @@
 
 El Desafío Encriptador de Texto es el proyecto final de la etapa de Programación G7 - ONE.
 
+![Pricipal](https://github.com/user-attachments/assets/a11f6f6c-0943-4860-881e-c11d8c2284b3)
 
+Ejecutando la ENCRIPTACION
+![encriptacion](https://github.com/user-attachments/assets/1b8cb9d0-7553-43ef-b82b-21facb4a27bc)
 
+Ejecutando la DESENCRIPTACION
+![desencriptacion](https://github.com/user-attachments/assets/c0b06515-5153-4a52-8f7a-c90cd287c597)
+
+## 🛠 Skills
+Javascript, HTML, CSS...
 
 🌱 I’m currently learning ... Web development!!
 
